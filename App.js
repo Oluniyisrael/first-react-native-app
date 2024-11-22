@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const handlePress = () =>{
+    console.log("Button pressed!!")
+  }
   return (
     <View style={styles.container}>
       <Text>Hello World!</Text>
-      <Button title= "Hi" style={styles.button}>Click me!!</Button>
+      <TouchableOpacity title= "Hi" style={styles.button} onPress={handlePress}>Click me!!</TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );
