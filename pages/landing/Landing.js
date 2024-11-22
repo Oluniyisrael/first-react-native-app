@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { TouchableOpacity,  Text, View } from 'react-native';
 import styles from './LandingStyle';
-
+import { handlePress } from '../../functions/functions';
 
 export default function Landing() {
     return(
